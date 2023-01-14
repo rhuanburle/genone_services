@@ -30,12 +30,12 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     runtimeOnly("ch.qos.logback:logback-classic")
-    runtimeOnly("com.h2database:h2")
     implementation("io.micronaut:micronaut-validation")
     implementation("io.micronaut.sql:micronaut-jdbc-hikari")
     runtimeOnly("mysql:mysql-connector-java")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("io.vertx:vertx-mysql-client")
+    implementation("io.micronaut.email:micronaut-email-javamail")
 }
 
 

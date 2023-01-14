@@ -22,8 +22,15 @@ jpa:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
         hbm2ddl:
-          auto: update
+          auto: drop-and-create
 netty:
   default:
     allocator:
       max-order: 3
+
+
+javamail:
+  authentication:
+    username: 'my.username'
+    password: 'my.password'
+

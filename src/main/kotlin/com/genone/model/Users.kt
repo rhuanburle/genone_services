@@ -18,4 +18,14 @@ data class Users (
     val dateCreated: String,
     @Column
     val dateUpdated: String?,
+    @Column
+    val phone: String,
+    @Column
+    val streetAddress: String,
+    @Column
+    val city: String,
+    @Column
+    val state: String,
+    @Column
+    val zipCode: String,
 )
