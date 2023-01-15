@@ -29,4 +29,10 @@ class UserController(private val userRepository: UserRepository) {
         userRepository.delete(users)
     }
 
+    @Get("/login/{email}/{password}")
+    @Secured("isAnonymous()")
+    fun login(email: String, password: String): Users {
+        return userRepository.findByEmailAndPassword(email, password)
+    }
+
 }
