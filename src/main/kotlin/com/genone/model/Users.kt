@@ -28,4 +28,6 @@ data class Users (
     val state: String,
     @Column
     val zipCode: String,
+    @Column
+    val role: String,
 )

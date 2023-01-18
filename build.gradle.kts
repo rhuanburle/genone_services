@@ -36,6 +36,10 @@ dependencies {
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("io.vertx:vertx-mysql-client")
     implementation("io.micronaut.email:micronaut-email-javamail")
+    implementation("org.springframework.security:spring-security-crypto:5.7.3")
+    implementation("commons-logging:commons-logging:1.2")
+    implementation("org.flowable:flowable-engine:6.3.1")
+    implementation("io.reactivex.rxjava3:rxjava:3.0.4")
 }
 
 

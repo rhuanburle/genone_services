@@ -1,14 +1,18 @@
 micronaut:
   application:
     name: genone_services
-#  security:
-#    authentication: bearer
-#    token:
-#      jwt:
-#        signatures:
-#          secret:
-#            generator:
-#              secret: ${JWT_GENERATOR_SIGNATURE_SECRET:pleaseChangeThisSecretForANewOne}
+  security:
+    endpoints:
+      login:
+        enabled: true
+    authentication: bearer
+    token:
+      jwt:
+        signatures:
+          secret:
+            generator:
+              secret: '"${JWT_GENERATOR_SIGNATURE_SECRET:testandojdadadapokdjaopkjdopamdamdoipmaoidmaoidmaopimdaoipmwt}"'
+              jws-algorithm: HS256
 datasources:
   default:
     url: jdbc:mysql://localhost:3306/mysql
@@ -22,7 +26,7 @@ jpa:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
         hbm2ddl:
-          auto: drop-and-create
+          auto:
 netty:
   default:
     allocator:
